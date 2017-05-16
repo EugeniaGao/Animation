@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jing.www.animationdemo.MainActivity">
+
+
+      <ImageView
+          android:id="@+id/goods"
+          android:layout_alignParentRight="true"
+          android:background="@drawable/d"
+          android:layout_width="60dp"
+          android:layout_height="60dp" />
+
+
+    <RelativeLayout
+
+        android:id="@+id/cart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="55dp"
+        android:background="@drawable/circle">
+
+
+        <ImageView
+            android:id="@+id/iv_cart"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/seller_detail_cart"
+            android:layout_centerInParent="true"/>
+
+
+        <TextView
+            android:id="@+id/fragment_goods_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bubble"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</RelativeLayout>
